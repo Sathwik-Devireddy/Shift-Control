@@ -4,7 +4,7 @@ const firstmiddleware = function (req, res, next) {
   console.log("first middleware");
   next();
 };
-app.use(firstmiddleware);
+app.use(firstmiddleware); //middleware was only accessible when 'use' was used. It is used to execute the middleware function for every incoming request to the server.
 app.get("/", (req, res) => {
   res.send("hey waz up");
 });

@@ -1,0 +1,11 @@
+<h1>Kungfu</h1>
+<p>This is the kungfu page.</p>
+<p>Current date and time: <%= new Date().toLocaleString() %></p>
+<p>Random number between 1 and 100: <%= Math.floor(Math.random() * 100) + 1 %></p>
+<p>List of kungfu styles:</p>
+<ul>
+  <% const styles = ['Shaolin', 'Wing Chun', 'Tai Chi', 'Jeet Kune Do', 'Capoeira']; %>
+  <% styles.forEach(function(style) { %>
+    <li><%= style %></li>
+  <% }); %>
+</ul>   

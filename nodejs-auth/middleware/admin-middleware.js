@@ -4,6 +4,5 @@ const isAdminUser = (req, res, next) => {
   } else {
     res.status(403).json({ message: "unauthorized / not admin" });
   }
-  next();
 };
 module.exports = isAdminUser;

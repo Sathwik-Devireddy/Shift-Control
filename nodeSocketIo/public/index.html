@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="user-list">
+      <h3>Online Users</h3>
+      <ul id="users"></ul>
+    </div>
+    <div id="chat"></div>
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="enter" required />
+      <button type="submit">send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      const messageForm = document.getElementById("message-form");
+      const messageInput = document.getElementById("message-input");
+      const chat = document.getElementById("chat");
+      const users = document.getElementById("users");
+      const userName = prompt("enter your name");
+
+      socket.emit("new-user", userName);
+      socket.on("userJoined", (user) => {
+        addMessage(`${user} has joined the chat`);
+      });
+      //listen the chat messages events from the users
+      socket.on("chatMessage", (message) => {
+        addMessage(`${message.userName}: ${message.text}`);
+      });
+      //handle form submission
+      messageForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const exactmessageText = messageInput.value.trim();
+        if (exactmessageText) {
+          socket.emit("chatMessage", { userName, text: exactmessageText });
+          messageInput.value = "";
+        }
+      });
+      function addMessage(message) {
+        const messageElement = document.createElement("div");
+        messageElement.textContent = message;
+        chat.appendChild(messageElement);
+        //scroll to bottom
+        chat.scrollTop = chat.scrollHeight;
+      }
+      socket.on("userLeft", (user) => {
+        addMessage(`${user} has left the chat`);
+      });
+      socket.on("usersList", (list) => {
+        users.innerHTML = "";
+
+        list.forEach((user) => {
+          const li = document.createElement("li");
+          li.textContent = user;
+          users.appendChild(li);
+        });
+      });
+    </script>
+  </body>
+</html>

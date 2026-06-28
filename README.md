@@ -175,13 +175,58 @@ Comprehensive Node.js learning and development repository with various modules a
 
 ---
 
+### 14. **graphql**
+**Implemented Functions:**
+- Apollo Server setup and initialization
+- GraphQL schema definition
+- Query and Mutation resolvers
+- Standalone GraphQL server configuration
+- Type definitions and schema organization
+- Basic product CRUD operations via GraphQL
+
+**Tech Stack:** `Apollo Server` | `GraphQL` | `GraphQL-Tag` | `Node.js`
+
+---
+
+### 15. **graphql-moderate**
+**Implemented Functions:**
+- Apollo Server with MongoDB integration
+- Product schema and data models
+- GraphQL type definitions with validation
+- Query operations (fetch all products, get by ID)
+- Mutation operations (create, update, delete products)
+- Database connection management
+- Environment variable configuration
+- Mongoose schema integration
+
+**Tech Stack:** `Apollo Server` | `GraphQL` | `MongoDB` | `Mongoose` | `dotenv` | `Node.js`
+
+---
+
+### 16. **nodeTypescript**
+**Implemented Functions:**
+- TypeScript configuration and setup
+- Express server with TypeScript
+- Type definitions and interfaces
+- Custom request types and middlewares
+- User model with Mongoose and TypeScript interfaces
+- Async/await error handling
+- Type-safe routing and controllers
+- Basic types, enums, tuples, and generics
+- MongoDB integration with TypeScript
+
+**Tech Stack:** `TypeScript` | `Express.js` | `MongoDB` | `Mongoose` | `Node.js` | `Type Definitions`
+
+---
+
 ## 🎓 Learning Progression
 
 1. **Basics** → http-module, node-module-system, file systems
 2. **Async Programming** → callBacks-async-await-promises, eventEmitter
 3. **Web Framework** → EXPRESS, restApi
 4. **Database** → MongoDb, Mongo-Intermediate
-5. **Production Apps** → BOOKSTOREAPI, nodejs-auth, nodeSocketIo
+5. **Advanced APIs** → graphql, graphql-moderate
+6. **Production Apps** → BOOKSTOREAPI, nodejs-auth, nodeSocketIo, nodeTypescript
 
 ---
 
@@ -189,22 +234,3 @@ Comprehensive Node.js learning and development repository with various modules a
 **Repository:** [Shift-Control](https://github.com/Sathwik-Devireddy/Shift-Control)
 
 ---
-
-## 🕒 Latest commits (most recent 5)
-
-- 2026-06-28 — feat: refactor TypeScript project structure and add Express server — 1bb051b17c9d2b2a8a066a536ed8f804ad8974c9
-  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/1bb051b17c9d2b2a8a066a536ed8f804ad8974c9
-
-- 2026-06-27 — Add initial TypeScript setup with configuration, source files, and package management — 39030fe62fad0bdacea7df3f4556328cadcdeeca
-  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/39030fe62fad0bdacea7df3f4556328cadcdeeca
-
-- 2026-06-26 — graphql-connected to mongodb and performed crud operations — e240b2c4d4b1daf74d8376a687d3d926647a6eeb
-  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/e240b2c4d4b1daf74d8376a687d3d926647a6eeb
-
-- 2026-06-26 — Merge branch 'main' of https://github.com/Sathwik-Devireddy/Shift-Control — d95e2982f5feddcdca1798123b88ad90196366b3
-  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/d95e2982f5feddcdca1798123b88ad90196366b3
-
-- 2026-06-26 — initialized GraphQL server with product management functionality — 6c5ff3faee9508aace199aa916a3a0d7c809c5ec
-  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/6c5ff3faee9508aace199aa916a3a0d7c809c5ec
-
-*Note: This list shows the five most recent commits; more are available on GitHub.*

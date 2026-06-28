@@ -187,3 +187,24 @@ Comprehensive Node.js learning and development repository with various modules a
 
 **Author:** Sathwik-Devireddy  
 **Repository:** [Shift-Control](https://github.com/Sathwik-Devireddy/Shift-Control)
+
+---
+
+## 🕒 Latest commits (most recent 5)
+
+- 2026-06-28 — feat: refactor TypeScript project structure and add Express server — 1bb051b17c9d2b2a8a066a536ed8f804ad8974c9
+  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/1bb051b17c9d2b2a8a066a536ed8f804ad8974c9
+
+- 2026-06-27 — Add initial TypeScript setup with configuration, source files, and package management — 39030fe62fad0bdacea7df3f4556328cadcdeeca
+  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/39030fe62fad0bdacea7df3f4556328cadcdeeca
+
+- 2026-06-26 — graphql-connected to mongodb and performed crud operations — e240b2c4d4b1daf74d8376a687d3d926647a6eeb
+  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/e240b2c4d4b1daf74d8376a687d3d926647a6eeb
+
+- 2026-06-26 — Merge branch 'main' of https://github.com/Sathwik-Devireddy/Shift-Control — d95e2982f5feddcdca1798123b88ad90196366b3
+  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/d95e2982f5feddcdca1798123b88ad90196366b3
+
+- 2026-06-26 — initialized GraphQL server with product management functionality — 6c5ff3faee9508aace199aa916a3a0d7c809c5ec
+  - https://github.com/Sathwik-Devireddy/Shift-Control/commit/6c5ff3faee9508aace199aa916a3a0d7c809c5ec
+
+*Note: This list shows the five most recent commits; more are available on GitHub.*
